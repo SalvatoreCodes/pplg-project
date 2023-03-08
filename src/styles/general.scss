@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  .hero {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1e90ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+
+    .hero--navigations {
+      width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      border-radius: 8px;
+
+      ul {
+        padding: 0.5rem;
+        li {
+          list-style: none;
+          margin-left: -4px;
+          transition: all 0.25s ease-in-out;
+          a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        li:hover {
+          scale: 1.1;
+        }
+      }
+    }
+
+    h1 {
+      color: white;
+      font-size: 8rem;
+      cursor: default;
+      width: 50vw;
+      padding: 5rem 5rem;
+    }
+
+    .hero--down-arrow {
+      position: absolute;
+      bottom: 2rem;
+      right: 5rem;
+      display: flex;
+      align-items: end;
+      gap: 1rem;
+
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: white;
+        cursor: default;
+      }
+
+      img {
+        background-color: white;
+        border-radius: 100%;
+        animation-name: hero-down-arrow;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+    }
+  }
+}
+
+@keyframes hero-down-arrow {
+  from {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body .hero {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1e90ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+}
+body .hero .hero--navigations {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  border-radius: 8px;
+}
+body .hero .hero--navigations ul {
+  padding: 0.5rem;
+}
+body .hero .hero--navigations ul li {
+  list-style: none;
+  margin-left: -4px;
+  transition: all 0.25s ease-in-out;
+}
+body .hero .hero--navigations ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+body .hero .hero--navigations ul li:hover {
+  scale: 1.1;
+}
+body .hero h1 {
+  color: white;
+  font-size: 8rem;
+  cursor: default;
+  width: 50vw;
+  padding: 5rem 5rem;
+}
+body .hero .hero--down-arrow {
+  position: absolute;
+  bottom: 2rem;
+  right: 5rem;
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+body .hero .hero--down-arrow h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: white;
+  cursor: default;
+}
+body .hero .hero--down-arrow img {
+  background-color: white;
+  border-radius: 100%;
+  animation-name: hero-down-arrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes hero-down-arrow {
+  from {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: 0.5rem;
+  }
+}
