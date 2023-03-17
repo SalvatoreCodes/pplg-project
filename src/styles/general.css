@@ -5,16 +5,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body .hero {
   height: 100vh;
-  width: 100vw;
   background-color: #1e90ff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
   position: relative;
 }
 body .hero .hero--navigations {
@@ -23,7 +22,6 @@ body .hero .hero--navigations {
   display: flex;
   justify-content: center;
   gap: 2.5rem;
-  border-radius: 8px;
 }
 body .hero .hero--navigations ul {
   padding: 0.5rem;
@@ -34,7 +32,7 @@ body .hero .hero--navigations ul li {
   transition: all 0.25s ease-in-out;
 }
 body .hero .hero--navigations ul li a {
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
   color: black;
 }
@@ -69,6 +67,19 @@ body .hero .hero--down-arrow img {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  cursor: pointer;
+}
+body .about {
+  height: 100vh;
+  background-color: blue;
+}
+body .join {
+  height: 100vh;
+  background-color: purple;
+}
+body .gallery {
+  height: 100vh;
+  background-color: pink;
 }
 
 @keyframes hero-down-arrow {
